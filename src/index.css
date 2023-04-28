@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.App,
+body,
+html {
+  background-color: white;
+}
+.ql-toolbar {
+  @apply hidden;
+}
+.ql-container.ql-snow {
+  @apply border-none text-xl p-0;
+}
