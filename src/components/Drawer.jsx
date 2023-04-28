@@ -159,7 +159,7 @@ export default function PersistentDrawerLeft(props) {
         <div className="flex flex-col flex-grow"></div>
         <Divider />
         <div className="p-3 flex items-center justify-between">
-          <a href="#">
+          <a href="https://github.com/EliottElek/quick-notes">
             <GitHub />
           </a>
           <span className="italic text-xs opacity-75">Version 1.0.0</span>
@@ -244,7 +244,11 @@ export const NoteItem = ({
         </DialogContent>
         <DialogActions>
           <Button onClick={() => setOpenModal(false)}>cancel</Button>
-          <Button color = "error" onClick={(e) => onDeleteNote(e, note.id)} autoFocus>
+          <Button
+            color="error"
+            onClick={(e) => onDeleteNote(e, note.id)}
+            autoFocus
+          >
             Delete
           </Button>
         </DialogActions>
